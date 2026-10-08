@@ -1,0 +1,7 @@
+{
+  "purpose": "training-path smoke test; no convergence claim",
+  "episodes": 30,
+  "transitions": 6000,
+  "episodes_with_optimizer_updates": 21,
+  "saved_policy": "local only; not published as a validated controller"
+}

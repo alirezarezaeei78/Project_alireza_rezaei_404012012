@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.DS_Store
+Thumbs.db
+MUJOCO_LOG.TXT
+!docs/original/source/MUJOCO_LOG.TXT
+results/local/
+artifacts/local/
+.pytest_cache/

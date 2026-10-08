@@ -1,0 +1,24 @@
+{
+  "kind": "archived checkpoint diagnostic, not corrected-environment evaluation",
+  "steps": 800,
+  "episode_sim_time_s": 4.025000000000489,
+  "total_reward": -784.0692320089374,
+  "final_axy": 48.70088763605215,
+  "done": true,
+  "stable_count": 0,
+  "max_abs_command_deg": 56.40000000000004,
+  "original_ctrlrange_rad": [
+    [
+      -170.0,
+      170.0
+    ]
+  ],
+  "warning_count": 0,
+  "checkpoint_sha256": "2c653b6801dd1ebff462cbe578109e95e527065f313cc1177a2efba292149114",
+  "source_xml_sha256": "7ca8e0cad89bd88e3425a17d14bf7f945662cd526fe023ddb3ecf10451bbce87",
+  "runtime_xml_sha256": "3a708c0966ce6fefaf7cdce5569da224ee16bc26f278cc1e2abb5db3b8db118b",
+  "observation_dim": 8,
+  "architecture": "8-256-256-2",
+  "changes": "Arena allocation only: legacy njmax/nconmax replaced by memory=64M. Archived Python is unchanged.",
+  "limitation": "Training provenance is absent. Deterministic single episode, historical filtering/units/truncation retained. No performance comparison with corrected PID."
+}

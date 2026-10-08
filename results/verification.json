@@ -1,0 +1,14 @@
+{
+  "original_files_preserved": 15,
+  "original_hashes_verified": true,
+  "benchmark_csv_hashes_verified": true,
+  "benchmark_runs": 8,
+  "simulator_warnings": 0,
+  "regression_tests_passed": 7,
+  "editable_install_verified": true,
+  "cli_help_verified": true,
+  "pdf_pages": 10,
+  "pdf_margin_check_passed": true,
+  "pdf_visual_review_passed": true,
+  "markdown_local_links_verified": true
+}

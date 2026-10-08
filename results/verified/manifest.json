@@ -1,0 +1,71 @@
+{
+  "kind": "fresh deterministic simulation benchmark",
+  "python": "3.12.9",
+  "versions": {
+    "mujoco": "3.5.0",
+    "numpy": "1.26.4",
+    "matplotlib": "3.10.0",
+    "torch": "2.4.0"
+  },
+  "platform": "Windows-11-10.0.26300-SP0",
+  "duration_s": 12.0,
+  "configuration": {
+    "frame_skip": 10,
+    "filter_alpha": 0.15,
+    "warmup_s": 0.25,
+    "kick_force": 60.0,
+    "kick_duration_s": 0.15,
+    "max_yaw_rate_deg_s": 240.0,
+    "action_step_deg": 1.5,
+    "stable_acc": 3.0,
+    "stable_steps": 40,
+    "max_steps": 2400,
+    "dt": 0.0005,
+    "control_dt": 0.005,
+    "direction": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "ctrlrange_rad": [
+      -2.9670597283903604,
+      2.9670597283903604
+    ]
+  },
+  "directions": {
+    "positive_x": [
+      1,
+      0,
+      0
+    ],
+    "negative_x": [
+      -1,
+      0,
+      0
+    ],
+    "positive_y": [
+      0,
+      1,
+      0
+    ],
+    "negative_y": [
+      0,
+      -1,
+      0
+    ]
+  },
+  "model_sha256": "13796ed799f48eaae86f222534006c2dbad93fec9155536809fc477cafda6f5d",
+  "csv_sha256": {
+    "negative_x_hold_zero.csv": "d040f754a70dd290acd95d568c5116eb93df35b667ad4d436442755ad60fccc0",
+    "negative_x_pid_x.csv": "f280df96327e36280cd98958600f4d1dbc941fcb46722b135566aca53ba04e4c",
+    "negative_y_hold_zero.csv": "0cfff3e3c80c03a640b491c859f5addbb841dc1525645a3b6f4661ffca2c7ff9",
+    "negative_y_pid_x.csv": "7a6d47b494fad936506f7614f4f96a070199676b6b4e4eabd8056cf7795bd92c",
+    "positive_x_hold_zero.csv": "2f611714a5037222aa751d14c1b165137299425f1be33ca6bf8233894a8e5e38",
+    "positive_x_pid_x.csv": "24a5cb105022bb3e3d571abd91583aae3356122747fa42431422e9c65590b150",
+    "positive_y_hold_zero.csv": "2faa0efa9d9699dc4ad51d09bbe532b4e03cec707808ef910382b3394b91704c",
+    "positive_y_pid_x.csv": "e1c8aafc654299ec70a86bb04a04238461005f3b2c98ceff8ec37d484a7f77bd",
+    "summary.csv": "e925dd27988ce0f8c5e9729ba3cdf8a5ef54c835ced92c2b72f1823edf994bff"
+  },
+  "protocol": "Same model, disturbance, control/filter cadence and limits; PID uses original gains with corrected timing. Eight fixed runs, no fitted policy or statistical replication.",
+  "limitation": "A low-acceleration window is a proxy, not a stability proof. No trained DQN is ranked in this corrected-environment benchmark."
+}

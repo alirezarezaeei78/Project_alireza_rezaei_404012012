@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mujoco-pendulum-control"
+version = "0.1.0"
+description = "Reproducible PID and Double DQN experiments for a yaw-actuated suspended ball"
+requires-python = ">=3.10"
+dependencies = ["mujoco>=3.3,<4", "numpy>=1.26,<3", "matplotlib>=3.8,<4", "torch>=2.4,<3"]
+
+[project.scripts]
+pendulum-control = "pendulum_control.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

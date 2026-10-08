@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+*.pt binary
+*.csv -text
+*.xml -text
+# Preserve byte-for-byte integrity of the supplied academic artifacts.
+docs/original/** -text

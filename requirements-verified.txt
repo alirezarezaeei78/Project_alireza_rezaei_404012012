@@ -1,0 +1,6 @@
+# Core versions exercised on Windows with Python 3.12.9; not a full transitive lock.
+mujoco==3.5.0
+numpy==1.26.4
+matplotlib==3.10.0
+torch==2.4.0
+-e .

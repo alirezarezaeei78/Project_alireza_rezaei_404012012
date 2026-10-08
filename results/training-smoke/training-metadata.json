@@ -1,0 +1,29 @@
+{
+  "seed": 1,
+  "episodes": 30,
+  "config": {
+    "frame_skip": 10,
+    "filter_alpha": 0.15,
+    "warmup_s": 0.25,
+    "kick_force": 60.0,
+    "kick_duration_s": 0.15,
+    "max_yaw_rate_deg_s": 240.0,
+    "action_step_deg": 1.5,
+    "stable_acc": 3.0,
+    "stable_steps": 40,
+    "max_steps": 200
+  },
+  "architecture": "8-256-256-2",
+  "model_sha256": "13796ed799f48eaae86f222534006c2dbad93fec9155536809fc477cafda6f5d",
+  "environment": "corrected-v1",
+  "hyperparameters": {
+    "gamma": 0.99,
+    "learning_rate": 0.0003,
+    "batch_size": 256,
+    "replay_capacity": 200000,
+    "learn_start": 2000,
+    "target_update_steps": 1000,
+    "epsilon_decay_steps": 120000
+  },
+  "note": "Training is not an independent evaluation; validate on held-out disturbances before performance claims."
+}
